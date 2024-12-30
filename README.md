@@ -1,18 +1,16 @@
-## NAME : BHARANIKA A.S
-## REG NO : 24901181
-## EXPERIMENT 11 :  IMPLEMENTATION OF SYNCHRONOUS UP COUNTER
+### NAME : BHARANIKA A.S
+### REG NO : 24901181
+# EXPERIMENT 7:  IMPLEMENTATION OF SYNCHRONOUS UP COUNTER
 
-## AIM:
+# AIM:
 
 To implement 4 bit synchronous up counter and validate functionality.
 
-## SOFTWARE REQUIRED:
+# SOFTWARE REQUIRED:
 
 Quartus prime
 
-## THEORY
-
-## 4 BIT SYNCHRONOUS UP COUNTER
+# 4 BIT SYNCHRONOUS UP COUNTER
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
 
@@ -28,7 +26,7 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
-## PROCEDURE :
+# PROCEDURE :
  1.Initialize the shift register to a known state (e.g., all zeros).
  
  2.Input a bit serially into the shift register.
@@ -41,19 +39,19 @@ However, the remaining flip-flops should be made ready to toggle only when all l
  
 
 
-## PROGRAM :
+# PROGRAM :
 ![EXP UP PROGRAM](https://github.com/user-attachments/assets/9cfd4a57-816c-40a7-a1ff-ee00c6d940ea)
 
 
-## RTL LOGIC UP COUNTER :
+# RTL LOGIC UP COUNTER :
 ![UP LOGIC DE](https://github.com/user-attachments/assets/1a17d74b-1ce6-471d-b962-e950d5c8ff4e)
 
 
-## TIMING DIAGRAM FOR IP COUNTER :
+# TIMING DIAGRAM FOR IP COUNTER :
 ![UP WAVE FORM](https://github.com/user-attachments/assets/d17a043b-aabe-44fc-8a65-a08cba89f986)
 
-## TRUTH TABLE
+# TRUTH TABLE
 ![TRUTHTABLE UP](https://github.com/user-attachments/assets/db284906-f159-43a8-8dc0-c85b1a234658)
 
-## RESULT :
+# RESULT :
  Hence a 4 bit synchronous up counter is implemented correctly.
